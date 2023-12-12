@@ -1,13 +1,5 @@
 ﻿using CRUDADO.Models;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web;
 using System.Windows.Forms;
 
 namespace CRUDADO
@@ -31,7 +23,7 @@ namespace CRUDADO
             nameTextBox.Text = student.Name;
             regTextBox.Text = student.Reg;
             classTextBox.Text = student.Class;
-            sectionTextBox.Text = student.Section;            
+            sectionTextBox.Text = student.Section;
         }
         public void SaveInfo()
         {

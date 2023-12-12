@@ -30,7 +30,7 @@ namespace CRUDADO
 
         private void searchTextBox_TextChanged(object sender, EventArgs e)
         {
-            StudentDb.DisplayAndSearch(dataGridView,"SELECT ID, Name, Reg, Class, Section FROM Student WHERE Name LIKE '%" + searchTextBox.Text + "%'");
+            StudentDb.DisplayAndSearch(dataGridView, "SELECT ID, Name, Reg, Class, Section FROM Student WHERE Name LIKE '%" + searchTextBox.Text + "%'");
         }
 
         private void dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -43,11 +43,11 @@ namespace CRUDADO
                     dataGridView.Rows[e.RowIndex].Cells[2].Value.ToString(),
                     dataGridView.Rows[e.RowIndex].Cells[3].Value.ToString(),
                     dataGridView.Rows[e.RowIndex].Cells[4].Value.ToString(),
-                    dataGridView.Rows[e.RowIndex].Cells[5].Value.ToString(), 
+                    dataGridView.Rows[e.RowIndex].Cells[5].Value.ToString(),
                     dataGridView.Rows[e.RowIndex].Cells[6].Value.ToString()
-                    );                
+                    );
                 frmStudent.UpdateInfo(student);
-                frmStudent.ShowDialog();;
+                frmStudent.ShowDialog(); ;
                 return;
             }
             if (e.ColumnIndex == 1)
