@@ -109,7 +109,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="README.md" />
     <None Include="Resources\Search_16x16.png" />
   </ItemGroup>
   <ItemGroup>
